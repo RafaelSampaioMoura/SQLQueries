@@ -1,4 +1,7 @@
 USE sales;
+
+DROP TABLE IF EXISTS sales;
+
 CREATE TABLE sales
 (
 	purchase_number INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
