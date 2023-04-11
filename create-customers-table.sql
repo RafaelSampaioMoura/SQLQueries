@@ -1,4 +1,6 @@
 USE sales;
+DROP TABLE IF EXISTS customers;
+
 CREATE TABLE customers
 (
 	customer_id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
