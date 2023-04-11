@@ -10,4 +10,8 @@ PRIMARY KEY(company_id),
 UNIQUE KEY(headquarters_phone_number)
 );
 
-DROP TABLE companies;
+ALTER TABLE companies
+CHANGE COLUMN headquarters_phone_number headquarters_phone_number VARCHAR(255) NULL;
+
+ALTER TABLE companies
+CHANGE COLUMN headquarters_phone_number headquarters_phone_number VARCHAR(255) NOT NULL;
